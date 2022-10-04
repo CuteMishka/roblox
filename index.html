@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Roblox</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
+	<style>
+			body{
+				background-color: #1E1E1E;
+				margin: 0;
+				padding: 0;
+			}
+			.r{
+				font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 96px;
+				line-height: 117px;
+				color: #FFFFFF;
+			}
+			.blox{
+				font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 96px;
+				line-height: 117px;
+				color: #FFFFFF;
+			}
+			.o{
+				box-sizing: border-box;
+				display: inline-block;
+				width: 57.75px;
+				height: 57.75px;
+				border: 15px solid #FFFFFF;
+				transform: rotate(21deg);
+				margin: 10px;
+			}
+			.main{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: row;
+				height: 100vh;
+
+			}
+			.elips{
+				box-sizing: border-box;
+				border: 4px solid white;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				position: relative;
+			}
+			.elips::before {
+				content: "";
+				position: absolute;
+				top: -2px;
+				bottom: -2px;
+				left: -2px;
+				right: -2px;
+				background: linear-gradient(50deg, white, #1E1E1E);
+				border-radius: 34px;
+				z-index: -1;
+			}
+	</style>
+</head>	
+<body>
+	<div class="container">
+		<div class="main">
+			<div class="r">R</div>
+			<div class="o"></div>
+			<div class="blox">BLOX
+			</div>
+			<div class="elip-wrapp">
+				<div class="elips"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
