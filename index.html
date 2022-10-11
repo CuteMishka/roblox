@@ -58,6 +58,15 @@
 				height: 100px;
 				border-radius: 50%;
 				position: relative;
+				animation-name: elips;
+				animation-duration: 10s;
+			}
+			@keyframes elips{
+				0% {background: linear-gradient(10deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
+				25% {background: linear-gradient(50deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
+				50% {background: linear-gradient(150deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
+				75%{background: linear-gradient(200deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
+				100%{background: linear-gradient(313deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
 			}
 			.elips::before{
 				content: "";
