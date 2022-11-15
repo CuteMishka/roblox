@@ -61,13 +61,6 @@
 				animation-name: elips;
 				animation-duration: 10s;
 			}
-			@keyframes elips{
-				0% {background: linear-gradient(10deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
-				25% {background: linear-gradient(50deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
-				50% {background: linear-gradient(150deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
-				75%{background: linear-gradient(200deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
-				100%{background: linear-gradient(313deg, white, white, white, #1E1E1E, #1E1E1E) border-box;}
-			}
 			.elips::before{
 				content: "";
 				position: absolute;
@@ -83,12 +76,21 @@
 				linear-gradient(#fff 0 0);
 			-webkit-mask-composite: destination-out;
 			mask-composite: exclude	;
+			animation: rotate 2s infinite;
 			}
 			.elip-wrapp{
 				width: 100%;
 				margin: 0 auto;
 				display: flex;
 				justify-content: center;
+			}
+			@keyframes rotate {
+				0% {
+					transform: rotate(-45deg);
+				}
+				100% {
+					transform: rotate(45deg);
+				}
 			}
 	</style>
 </head>	
