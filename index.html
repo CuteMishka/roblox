@@ -12,6 +12,7 @@
 				background-color: #1E1E1E;
 				margin: 0;
 				padding: 0;
+				font-family: 'Montserrat', sans-serif;
 			}
 			.container{
 				display: flex;
@@ -20,7 +21,6 @@
 				height: 100vh;
 			}
 			.r{
-				font-family: 'Montserrat', sans-serif;
 				font-style: normal;
 				font-weight: 700;
 				font-size: 96px;
@@ -28,7 +28,6 @@
 				color: #FFFFFF;
 			}
 			.blox{
-				font-family: 'Montserrat', sans-serif;
 				font-style: normal;
 				font-weight: 700;
 				font-size: 96px;
@@ -48,7 +47,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				flex-direction: row;
+				flex-direction: column;
 				height: fit-content;
 				flex-wrap: wrap;
 			}
@@ -80,30 +79,48 @@
 			}
 			.elip-wrapp{
 				width: 100%;
-				margin: 0 auto;
 				display: flex;
 				justify-content: center;
 			}
 			@keyframes rotate {
 				0% {
-					transform: rotate(-1deg);
+					transform: rotate(0deg);
 				}
 				100% {
 					transform: rotate(360deg);
 				}
+			}
+			.nadpic{
+				display: inherit;
+
+			}
+			.wrapper{
+				position: relative;
+			}
+			.loader{
+				color: white;
+				position: absolute;
+				top: 20px;
+				left: 18px;
 			}
 	</style>
 </head>	
 <body>
 	<div class="container">
 		<div class="main">
-			<div class="r">R</div>
-			<div class="o"></div>
-			<div class="blox">BLOX
+			<div class="nadpic">
+				<div class="r">R</div>
+				<div class="o"></div>
+				<div class="blox">BLOX</div>
+			</div>
+		<div class="wrapper">
+			<div class="loader">
+				<br class="loading">Loading</br>
 			</div>
 			<div class="elip-wrapp">
 				<div class="elips"></div>
 			</div>
+		</div>
 		</div>
 	</div>
 </body>
